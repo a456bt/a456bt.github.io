@@ -1,1 +1,59 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My WebGL Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header>
+    <h1>My WebGL Portfolio</h1>
+    <p>Three Dimensions, Zero Limits.</p>
+  </header>
+
+  <!-- Gallery Container -->
+  <section class="gallery">
+    <!-- Each .game-item will hold the thumbnail, overlay, and eventually an iframe for the game -->
+    <div class="game-item">
+      <img src="images/game1-thumbnail.jpg" alt="Game 1 Thumbnail" />
+      <div class="overlay">
+        <div class="overlay-content">
+          <h2>Game 1 Title</h2>
+          <button class="play-button" data-game-url="webgl/Game1/index.html">
+            Play
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="game-item">
+      <img src="images/game2-thumbnail.jpg" alt="Game 2 Thumbnail" />
+      <div class="overlay">
+        <div class="overlay-content">
+          <h2>Game 2 Title</h2>
+          <button class="play-button" data-game-url="webgl/Game2/index.html">
+            Play
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add more items if you’d like -->
+  </section>
+
+  <!-- Optional Additional Content, e.g. About, Contact, etc. -->
+  <section class="about">
+    <h2>About Me</h2>
+    <p>
+      When I'm not walking through 3D virtual worlds, I’m exploring real ones.
+      Let’s create something extraordinary together.
+    </p>
+  </section>
+
+  <!-- Script for handling the overlay and game loading -->
+  <script src="script.js"></script>
+</body>
+</html>
